@@ -276,7 +276,7 @@ while continues == "yes" or continues == "y":
         print("The code will not continue per your request")
 
 
-# In[90]:
+# In[5]:
 
 
 # 6. 
@@ -307,6 +307,26 @@ books = [
         "genre": "Biography"
     }
 ]
+for book in books:
+    print('title: ' +book['title'])
+    print('author: ' +book['author'])
+    print('genre: ' +book['genre'])
+    
+
+    
+
+
+# In[6]:
+
+
+pick_a_genre= input("Please pick a genre. ")
+for book in books:
+    if book['genre'] == pick_a_genre:
+        print('title: ' +book['title'])
+        print('author: ' +book['author'])
+        print('genre: ' +book['genre'])
+    else:
+        print("Sorry, we don't have a book in that genre.")
 
 
 # In[ ]:
